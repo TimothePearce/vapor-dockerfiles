@@ -44,7 +44,8 @@ RUN docker-php-ext-install \
     gettext \
     soap \
     sockets \
-    xsl
+    xsl \
+    exif
 
 RUN docker-php-ext-configure gd --with-freetype=/usr/lib/ --with-jpeg=/usr/lib/ && \
     docker-php-ext-install gd
